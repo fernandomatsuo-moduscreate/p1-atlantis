@@ -1,0 +1,18 @@
+######################################################################
+# Script Name    : atlantis.yaml
+# Description    : Atlantis folder workflow
+# Author         : Fernando Matsuo Santos - fernando.matsuo@moduscreate.com / msantos@brinkshome.com
+######################################################################
+version: 3
+
+projects:
+# If two or more projects have the same dir and workspace, they must also have a 'name' key to differentiate them.
+- name: p1-sandbox
+  dir: ./terraform
+  workflow: sandbox
+- name: p1-staging
+  dir: ./terraform
+  workflow: staging
+- name: p1-prod
+  dir: ./terraform
+  workflow: prod
