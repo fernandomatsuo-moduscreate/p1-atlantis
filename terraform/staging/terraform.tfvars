@@ -4,4 +4,4 @@
 project_name = "bhs"
 stage        = "staging"
 region       = "us"
-location     = "southcentralus"
+location     = "eastus2"
