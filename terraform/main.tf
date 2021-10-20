@@ -14,13 +14,13 @@ resource "azurerm_resource_group" "resource_group" {
   }
 }
 
- resource   "azurerm_public_ip"   "myvm1publicip"   { 
+resource   "azurerm_public_ip"   "myvm1publicip"   { 
    name   =   "pip1" 
    location   =   var.location
    resource_group_name   =   azurerm_resource_group.resource_group.name 
    allocation_method   =   "Dynamic" 
    sku   =   "Basic" 
- } 
+} 
 
 resource "azurerm_storage_account" "storage_account" {
   name                     = "atlantistest"
@@ -34,4 +34,5 @@ resource "azurerm_storage_account" "storage_account" {
     env        = var.stage
   }
 }
+
 
