@@ -3,5 +3,4 @@
 ################################################################################
 project_name = "bhs"
 stage        = "sandbox"
-region       = "us"
-location     = "southcentralus"
+location     = "eastus2"

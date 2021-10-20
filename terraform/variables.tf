@@ -1,19 +1,3 @@
-# variable "client_id" {
-#   description = ""
-# }
-
-# variable "client_secret" {
-#   description = ""
-# }
-
-# variable "subscription_id" {
-#   description = ""
-# }
-
-# variable "tenant_id" {
-#   description = ""
-# }
-
 variable "project_name" {
   description = "Name of the project"
 }
