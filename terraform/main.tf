@@ -5,7 +5,7 @@ locals {
 
 # Create a resource group
 resource "azurerm_resource_group" "resource_group" {
-  name     = "${var.project_name}-rg-${var.region}-${var.stage}"
+  name     = "${var.project_name}-rg-${var.location}-${var.stage}"
   location = var.location
 
   tags = {
