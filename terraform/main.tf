@@ -14,8 +14,8 @@ resource "azurerm_resource_group" "resource_group" {
   }
 }
 
-resource "azurerm_public_ip" "myvm1publicip" {
-  name                = "pip1"
+resource "azurerm_public_ip" "public_ip" {
+  name                = "${var.project_name}-pip-test-${var.location}-${var.stage}"
   location            = var.location
   resource_group_name = azurerm_resource_group.resource_group.name
   allocation_method   = "Dynamic"
