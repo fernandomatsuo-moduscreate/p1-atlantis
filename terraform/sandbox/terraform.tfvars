@@ -3,4 +3,5 @@
 ################################################################################
 project_name = "bhs"
 stage        = "sandbox"
+region       = "us"
 location     = "eastus2"

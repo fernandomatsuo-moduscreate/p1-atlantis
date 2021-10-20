@@ -3,4 +3,5 @@
 ################################################################################
 project_name = "bhs"
 stage        = "staging"
+region       = "us"
 location     = "eastus2"

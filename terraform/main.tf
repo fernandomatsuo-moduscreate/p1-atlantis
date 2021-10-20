@@ -5,7 +5,7 @@ locals {
 
 # Create a resource group
 resource "azurerm_resource_group" "resource_group" {
-  name     = "${var.project_name}-rg-${var.location}-${var.stage}"
+  name     = "${var.project_name}-rg-${var.region}-${var.stage}"
   location = var.location
 
   tags = {
@@ -15,7 +15,7 @@ resource "azurerm_resource_group" "resource_group" {
 }
 
 resource "azurerm_public_ip" "public_ip" {
-  name                = "${var.project_name}-pip-test-${var.location}-${var.stage}"
+  name                = "${var.project_name}-pip-test-${var.region}-${var.stage}"
   location            = var.location
   resource_group_name = azurerm_resource_group.resource_group.name
   allocation_method   = "Dynamic"
